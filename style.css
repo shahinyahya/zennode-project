@@ -100,6 +100,7 @@
   align-items: center;
   padding-top: 2rem;
   font-family: var(--default-font);
+  position: relative;
 }
 
 .checkout-title,
@@ -171,6 +172,7 @@
   position: relative;
   padding-top: 5rem;
   padding-bottom: 25rem;
+  position: relative;
 }
 
 .hero-bottom-section img {
@@ -182,6 +184,55 @@
   right: -320px;
   box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.69);
   animation: upward 1000ms forwards ease-in;
+}
+
+.image-line-round {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.image-line-round img:nth-child(1) {
+  position: absolute;
+  left: 580px;
+  top: 350px;
+}
+
+.image-line-round img:nth-child(2) {
+  position: absolute;
+  right: 580px;
+  top: 650px;
+}
+
+.image-lines img:nth-child(1) {
+  position: absolute;
+  left: 550px;
+  top: 580px;
+}
+
+.image-lines img:nth-child(2) {
+  position: absolute;
+  right: 550px;
+  top: 470px;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.zig-zag {
+  position: absolute;
+  right: 0;
+}
+
+.zig-zag img:nth-child(2) {
+  position: absolute;
+  z-index: 12;
+  top: 190px;
+  left: 880px;
 }
 
 .why-us-section {
@@ -196,6 +247,7 @@
   align-items: center;
   gap: 2.5rem;
   padding-bottom: 6rem;
+  position: relative;
 }
 
 .card {
@@ -203,6 +255,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   transition: 300ms ease;
+  position: relative;
 }
 
 .card:hover {
@@ -244,6 +297,17 @@
   border: none;
 }
 
+.arrow-1 {
+  position: absolute;
+  left: 310px;
+}
+
+.arrow-2 {
+  position: absolute;
+  right: 350px;
+  top: 400px;
+}
+
 .card-heading p {
   font-size: 35px;
   max-width: 300px;
@@ -267,11 +331,18 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
   font-family: var(--default-font);
+  position: relative;
+}
+
+.footer-components {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-btn {
