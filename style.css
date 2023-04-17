@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -38,13 +39,57 @@
   gap: 2.5rem;
 }
 
+.list-menu-item {
+  transition: 300ms ease;
+  position: relative;
+}
+
+.list-menu-item:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .list-menu-item a {
   text-decoration: none;
   color: white;
 }
 
+.list-menu-item:nth-child(2)::after {
+  content: "HOT";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 8px;
+  color: white;
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  background-color: red;
+  top: 5px;
+  right: -25px;
+}
+
 .list-menu-item i {
   color: white;
+  position: relative;
+}
+
+.list-menu-item i::after {
+  content: "1";
+  color: black;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 15px;
 }
 
 .hero-section {
@@ -101,6 +146,7 @@
 .btn-small {
   width: 11rem;
   height: 4rem;
+  animation: scaling-anim 900ms forwards 400ms ease-in;
 }
 
 .btn-small button {
@@ -114,6 +160,11 @@
   font-weight: 800;
   font-size: 18px;
   margin-top: 2rem;
+  transition: 250ms ease-in;
+}
+
+.btn-small button:hover {
+  scale: 1.1;
 }
 
 .hero-bottom-section {
@@ -130,6 +181,7 @@
   z-index: 1;
   right: -320px;
   box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.69);
+  animation: upward 1000ms forwards ease-in;
 }
 
 .why-us-section {
@@ -143,12 +195,18 @@
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  padding-bottom: 6rem;
 }
 
 .card {
   border: 1px solid black;
   padding: 1.5rem;
   border-radius: 10px;
+  transition: 300ms ease;
+}
+
+.card:hover {
+  box-shadow: -2px 7px 19px 0px rgba(0, 0, 0, 0.75);
 }
 
 .card-component {
@@ -205,4 +263,94 @@
 .card:nth-child(odd) {
   background-color: #fff;
   border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  font-family: var(--default-font);
+}
+
+.footer-btn {
+  width: 11rem;
+  height: 2.75rem;
+  transition: 250ms ease-in-out;
+}
+
+.footer-btn button {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: none;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 800;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-btn button i {
+  font-size: 21px;
+}
+
+.footer-btn:hover {
+  scale: 0.89;
+}
+
+.footer-line p {
+  padding: 1rem 0;
+  color: rgba(0, 0, 0, 0.69);
+  font-size: 12px;
+}
+
+.footer-spans {
+  font-size: 15px;
+  padding-top: 1.5rem;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 150px;
+  padding-top: 1.5rem;
+}
+
+.footer-credits {
+  color: rgba(0, 0, 0, 0.69);
+  padding-top: 1.5rem;
+}
+
+/* animation */
+
+@keyframes scaling-anim {
+  0% {
+    scale: 0.5;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes upward {
+  from {
+    transform: translateY(1000px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
