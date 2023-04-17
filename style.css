@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-default-color: black
+    --hero-bg-color: #702DFF;
+    --special-color: #F4C01E
+    --default-font: 'Inter', sans-serif;
+    --title-font-weight: 800;
+    --title-font-size: 60px;
+    
+    
+}
