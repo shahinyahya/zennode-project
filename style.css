@@ -354,3 +354,33 @@
     transform: translateX(0);
   }
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (width <= 750px) {
+  .nav-list {
+    gap: 1.9rem;
+  }
+
+  .hero-main-title {
+    font-size: 25px;
+    max-width: 550px;
+  }
+
+  .hero-main-title span {
+    font-size: 35px;
+  }
+
+  .hero-bottom-section img {
+    width: 550px;
+    right: -280px;
+    top: 190px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
