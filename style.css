@@ -131,3 +131,78 @@
   right: -320px;
   box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.69);
 }
+
+.why-us-section {
+  background-color: #efefef;
+  padding-top: 13rem;
+  font-family: var(--default-font);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.card-component {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed grey;
+  padding-top: 1rem;
+}
+
+.card-component:nth-child(3) {
+  border: none;
+}
+
+.card-title p {
+  font-weight: bolder;
+}
+
+.card-line p {
+  color: rgba(0, 0, 0, 0.69);
+  max-width: 300px;
+}
+
+.card:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed grey;
+  padding: 9rem 1rem;
+}
+
+.card:nth-child(2) .card-component {
+  border: none;
+}
+
+.card-heading p {
+  font-size: 35px;
+  max-width: 300px;
+  font-weight: var(--title-font-weight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-description p {
+  max-width: 300px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.card:nth-child(odd) {
+  background-color: #fff;
+  border: none;
+}
