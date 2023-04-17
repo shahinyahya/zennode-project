@@ -1,12 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
 
 :root {
-    --font-default-color: black
-    --hero-bg-color: #702DFF;
-    --special-color: #F4C01E
-    --default-font: 'Inter', sans-serif;
-    --title-font-weight: 800;
-    --title-font-size: 60px;
-    
-    
+  --font-default-color: black;
+  --hero-bg-color: #702dff;
+  --special-color: #f4c01e;
+  --default-font: "Inter", sans-serif;
+  --title-font-weight: 800;
+  --title-font-size: 45px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 5rem;
+  background: var(--hero-bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--default-font);
+}
+
+.nav-logo p {
+  font-weight: var(--title-font-weight);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 2.5rem;
+}
+
+.list-menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-menu-item i {
+  color: white;
+}
+
+.hero-section {
+  background-color: var(--hero-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-family: var(--default-font);
+}
+
+.checkout-title,
+.hero-main-title,
+.hero-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-title {
+  gap: 0.25rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+}
+
+.hero-main-title {
+  font-size: var(--title-font-size);
+  max-width: 900px;
+  text-align: center;
+  font-weight: var(--title-font-weight);
+  color: white;
+  padding-top: 1rem;
+}
+
+.hero-main-title span {
+  color: var(--special-color);
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.hero-desc p {
+  color: white;
+  max-width: 520px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 15px;
+}
+
+.btn-small {
+  width: 11rem;
+  height: 4rem;
+}
+
+.btn-small button {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--hero-bg-color);
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.hero-bottom-section {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 25rem;
+}
+
+.hero-bottom-section img {
+  width: 650px;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+  position: absolute;
+  z-index: 1;
+  right: -320px;
+  box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.69);
 }
