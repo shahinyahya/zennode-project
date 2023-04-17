@@ -429,6 +429,11 @@
 /* MEDIA QUERIES */
 
 @media screen and (width <= 750px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .nav-list {
     gap: 1.9rem;
   }
@@ -443,9 +448,58 @@
   }
 
   .hero-bottom-section img {
-    width: 550px;
-    right: -280px;
-    top: 190px;
+    width: 400px;
+    right: -180px;
+    top: 270px;
+  }
+
+  .image-line-round {
+    width: 15px;
+    height: 15px;
+  }
+
+  .image-line-round img:nth-child(1) {
+    top: 650px;
+    left: 560px;
+  }
+
+  .image-line-round img:nth-child(2) {
+    top: 490px;
+    right: 600px;
+  }
+
+  .image-lines img {
+    width: 30px;
+  }
+
+  .image-lines img:nth-child(1) {
+    left: 560px;
+    top: 520px;
+  }
+
+  .image-lines img:nth-child(2) {
+    right: 600px;
+    top: 600px;
+  }
+
+  .circle img {
+    width: 120px;
+  }
+
+  .zig-zag {
+    position: relative;
+  }
+
+  .zig-zag img:nth-child(1) {
+    width: 800px;
+    position: absolute;
+    top: -230px;
+    left: 100px;
+  }
+
+  .zig-zag img:nth-child(2) {
+    top: 220px;
+    left: 200px;
   }
 
   .card-container {
@@ -453,5 +507,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .arrow-1 {
+    transform: rotate(90deg);
+    top: 490px;
+    left: 300px;
+  }
+
+  .arrow-2 {
+    transform: rotate(90deg);
+    top: -90px;
+    left: -55px;
+  }
+
+  .footer-img {
+    width: 200px;
   }
 }
